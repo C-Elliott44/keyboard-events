@@ -14,11 +14,11 @@ function charCount(event) {
 }
 
 function countThis(totalCharacters) {
-    total = (179 - totalCharacters);
+    total = (180 - totalCharacters);
     console.log(total + ' and ' + totalCharacters);
     return total;
 }
 
 // Set up event listener for textarea using keydown
 el = document.getElementById('message');
-el.addEventListener('keydown', charCount, false);
+el.addEventListener('keyup', charCount, false);
